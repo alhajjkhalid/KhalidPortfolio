@@ -228,11 +228,11 @@ function HeroSection() {
               </div>
 
               {/* Floating badge */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.8 }}
-                className="absolute -right-4 top-1/4 glass rounded-xl px-4 py-3"
+                className="absolute -right-4 bottom-8 glass rounded-xl px-4 py-3"
               >
                 <p className="text-xs text-gray-400 mb-1">Based in</p>
                 <p className="text-sm font-semibold text-white flex items-center gap-1">
