@@ -112,7 +112,7 @@ function Navigation() {
 function HeroSection() {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
-  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+  const opacity = useTransform(scrollY, [0, 700], [1, 0]);
 
   return (
     <section className="min-h-screen relative flex items-center overflow-hidden">
