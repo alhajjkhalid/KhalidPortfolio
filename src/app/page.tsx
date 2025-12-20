@@ -3,11 +3,11 @@
 import { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
-import { 
-  Menu, X, ArrowUpRight, Github, Linkedin, Mail, Phone, 
-  MapPin, Calendar, Briefcase, GraduationCap, Code, 
+import {
+  Menu, X, ArrowUpRight, Github, Linkedin, Mail, Phone,
+  MapPin, Calendar, Briefcase, GraduationCap, Code,
   TrendingUp, Users, Video, Database, Zap, Globe,
-  ChevronDown, Send, ExternalLink
+  ChevronDown, Send, ExternalLink, Download
 } from 'lucide-react';
 
 // Animation variants
@@ -165,18 +165,26 @@ function HeroSection() {
             </motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-4 mb-10">
-              <a 
+              <a
                 href="#projects"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-[#c9a227] text-[#0a0a0b] font-semibold rounded-lg hover:bg-[#e4c85c] transition-all group"
               >
                 View My Work
                 <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </a>
-              <a 
+              <a
                 href="#contact"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-[#262629] text-white font-semibold rounded-lg hover:border-[#c9a227] hover:text-[#c9a227] transition-colors"
               >
                 Get in Touch
+              </a>
+              <a
+                href="/resume.pdf"
+                download
+                className="inline-flex items-center gap-2 px-6 py-3 border border-[#262629] text-white font-semibold rounded-lg hover:border-[#c9a227] hover:text-[#c9a227] transition-colors"
+              >
+                <Download size={18} />
+                Download Resume
               </a>
             </motion.div>
 
