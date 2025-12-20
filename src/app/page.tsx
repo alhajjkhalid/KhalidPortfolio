@@ -400,10 +400,6 @@ function SkillsSection() {
 
   return (
     <section id="skills" className="py-32 relative">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#262629] to-transparent" />
-      </div>
-
       <div className="max-w-7xl mx-auto px-6">
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
@@ -501,7 +497,7 @@ function ProjectsSection() {
       description: 'Built the complete website from scratch for the coding bootcamp, featuring enrollment systems, curriculum showcase, and optimized landing pages that boosted enrollments by 25%.',
       tech: ['React', 'Node.js', 'Responsive Design', 'SEO'],
       impact: '25% increase in bootcamp enrollments',
-      link: 'https://www.meraki-academy.org',
+      link: 'https://www.meraki-academy.com',
       featured: true
     },
     {
