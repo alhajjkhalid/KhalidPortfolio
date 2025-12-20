@@ -142,7 +142,7 @@ function HeroSection() {
             <motion.div variants={fadeInUp} className="mb-6">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c9a227]/10 border border-[#c9a227]/20 text-[#c9a227] text-sm font-medium">
                 <span className="w-2 h-2 rounded-full bg-[#c9a227] animate-pulse" />
-                Open to Global Remote Opportunities
+                Open to Global Opportunities
               </span>
             </motion.div>
 
@@ -467,14 +467,14 @@ function SkillsSection() {
           className="mt-16 text-center"
         >
           <p className="text-gray-500 text-sm uppercase tracking-widest mb-4">The Power of Range</p>
-          <div className="flex items-center justify-center gap-4 flex-wrap">
+          <div className="flex items-center justify-center gap-2 flex-wrap">
             {['Technical', 'Operations', 'Creative', 'Business', 'Data'].map((domain, i) => (
-              <span key={i} className="relative">
+              <span key={i} className="flex items-center gap-2">
                 <span className="text-[#c9a227] font-medium">{domain}</span>
-                {i < 4 && <span className="text-gray-600 mx-2">+</span>}
+                {i < 4 && <span className="text-gray-600">+</span>}
               </span>
             ))}
-            <span className="text-gray-600 mx-2">=</span>
+            <span className="text-gray-600">=</span>
             <span className="text-white font-bold">Unique Solutions</span>
           </div>
         </motion.div>
@@ -492,7 +492,7 @@ function ProjectsSection() {
       description: 'Developed a sophisticated scheduling algorithm tool with 5-shift and 6-shift modes, featuring rider assignment optimization, validation systems, and capacity management. Adopted company-wide across all Keeta KSA operations.',
       tech: ['React', 'JavaScript', 'Tailwind CSS', 'Algorithm Design'],
       impact: 'Improved operational efficiency across all regions',
-      link: null,
+      link: 'https://keeta-scheduler-ecru.vercel.app',
       featured: true
     },
     {
@@ -510,7 +510,7 @@ function ProjectsSection() {
       description: 'Designed a comprehensive 17+ hour training program with 6 modules covering all operational aspects. Features multi-language support (English/Chinese), certification process, and scalable implementation roadmap.',
       tech: ['Curriculum Design', 'LMS', 'Video Production', 'Multi-language'],
       impact: 'Strategic initiative for partner scalability',
-      link: null,
+      link: 'https://supervisor-certification.vercel.app',
       featured: true
     },
     {
@@ -523,12 +523,30 @@ function ProjectsSection() {
       featured: false
     },
     {
-      title: 'Video Testimonials Production',
+      title: 'Student Testimonial Video #1',
       category: 'Creative Production',
-      description: 'Produced 3 professional testimonial videos from A to Z — lighting, scripting, filming, and editing. Demonstrated end-to-end creative capability.',
+      description: 'Produced professional testimonial video from A to Z — lighting, scripting, filming, and editing. Demonstrated end-to-end creative capability.',
       tech: ['Videography', 'Script Writing', 'Video Editing', 'Lighting'],
       impact: 'Professional marketing assets',
-      link: 'https://www.youtube.com/watch?v=o_r7O_2vTH8',
+      link: 'https://youtu.be/o_r7O_2vTH8',
+      featured: false
+    },
+    {
+      title: 'Student Testimonial Video #2',
+      category: 'Creative Production',
+      description: 'Produced professional testimonial video from A to Z — lighting, scripting, filming, and editing. Demonstrated end-to-end creative capability.',
+      tech: ['Videography', 'Script Writing', 'Video Editing', 'Lighting'],
+      impact: 'Professional marketing assets',
+      link: 'https://youtu.be/WP6om5uetko',
+      featured: false
+    },
+    {
+      title: 'Student Testimonial Video #3',
+      category: 'Creative Production',
+      description: 'Produced professional testimonial video from A to Z — lighting, scripting, filming, and editing. Demonstrated end-to-end creative capability.',
+      tech: ['Videography', 'Script Writing', 'Video Editing', 'Lighting'],
+      impact: 'Professional marketing assets',
+      link: 'https://youtu.be/MorDWUxLEqs',
       featured: false
     },
     {
@@ -537,7 +555,7 @@ function ProjectsSection() {
       description: 'Built a compliance monitoring system for the west region operations, ensuring regulatory adherence and operational continuity.',
       tech: ['React', 'Data Visualization', 'Compliance Tracking'],
       impact: 'Streamlined compliance management',
-      link: null,
+      link: 'https://west-region-compliance.vercel.app',
       featured: false
     }
   ];
@@ -919,7 +937,7 @@ function ContactSection() {
             Let&apos;s Build <span className="gradient-text italic">Something Together</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Open to remote opportunities worldwide. Whether you need a problem-solver, 
+            Open to opportunities worldwide. Whether you need a problem-solver,
             a builder, or someone who can wear multiple hats — let&apos;s talk.
           </p>
         </motion.div>
@@ -969,7 +987,7 @@ function ContactSection() {
                   <div>
                     <p className="text-sm text-gray-500">Location</p>
                     <p className="text-white">Riyadh, Saudi Arabia</p>
-                    <p className="text-xs text-[#c9a227]">Open to global remote work</p>
+                    <p className="text-xs text-[#c9a227]">Open to relocation & remote work</p>
                   </div>
                 </div>
               </div>
