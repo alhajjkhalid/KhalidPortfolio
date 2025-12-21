@@ -739,6 +739,12 @@ function ExperienceSection() {
 
   const education = [
     {
+      degree: 'Advanced Data Analytics - Tech for Jobs Program',
+      school: 'Correlation One',
+      location: 'Online',
+      period: 'Completed March 2025'
+    },
+    {
       degree: 'Full-Stack Web Development Bootcamp',
       school: 'MERAKI Academy',
       location: 'Amman, Jordan',
